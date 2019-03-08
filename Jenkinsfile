@@ -47,7 +47,7 @@ node {
     }
 
     stage('Perform DAST in Container') {
-      pipelineContext.dockerContainer = pipelineContext.app.run()
+      // Do ZAP
       //sh 'curl http://127.0.0.1:8000'
     }
 
