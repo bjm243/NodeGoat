@@ -37,7 +37,7 @@ node {
     stage('Build Container') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-         app = docker.build("${DOCKER_HUB_NAME}/NodeGoat")
+         app = docker.build("${DOCKER_HUB_NAME}/nodegoat")
 	       pipelineContext.app = app
     }
 
